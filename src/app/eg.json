@@ -1,0 +1,61 @@
+// <ion-header [translucent]="true">
+//   <ion-segment #mysegment scrollable mode="md" [(ngModel)]="segment" (ionChange)="segmentChanged()" value="Contact">
+//     <ion-segment-button *ngFor="let item of segmentList" [value]="item">
+//       <ion-label>{{item}}</ion-label>
+//     </ion-segment-button> 
+//   </ion-segment>
+// </ion-header>
+
+// <ion-content [fullscreen]="true" class="ion-padding">
+
+//   <swiper (swiper)="setSwiperInstance($event)" (slideChange)="onSlideChange($event)" [config]='config'>
+//   <ng-template swiperSlide *ngFor='let item of segmentList'>{{item}}</ng-template>
+// </ion-content>
+
+  // import { Component, ViewChild, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
+  // import SwiperCore, { SwiperOptions, Navigation, Pagination, Scrollbar, Swiper } from 'swiper';
+  // import { IonicSwiper, IonSegment } from '@ionic/angular';
+  // import { SwiperComponent } from 'swiper/angular';
+  
+  // SwiperCore.use([IonicSwiper, Navigation, Pagination, Scrollbar]);
+  
+  // @Component({
+  // selector: 'app-customers',
+  // templateUrl: 'customers.page.html',
+  // styleUrls: ['customers.page.scss'],
+  // encapsulation: ViewEncapsulation.None
+  // })
+  // export class CustomersPage {//implements AfterContentChecked{
+  // @ViewChild('mysegment') segComponent: IonSegment;
+  // @ViewChild('swiper') swiper: SwiperComponent;
+  // config: SwiperOptions = {
+  // slidesPerView:1,
+  // spaceBetween:20,
+  // pagination:true,
+  // loop:false
+  // };
+  // private segment: string;
+  // private segmentList: Array = ['Contact', 'Notes', 'Info', 'RDV', 'Photos'];
+  // private slides: Swiper;
+  
+  // constructor(private changeDetectorRef: ChangeDetectorRef) {
+  // this.segment = this.segmentList[0];
+  // }
+  
+  // segmentChanged() {
+  // this.slides.slideTo(this.segmentList.indexOf(this.segment));
+  // }
+  
+  // setSwiperInstance(swiper) {
+  // this.slides = swiper;
+  // }
+  
+  // onSlideChange() {
+  // this.segment = this.segmentList[this.slides.activeIndex];
+  // console.log('slide change: ' + this.segment);
+  // //get the segment button
+  // console.log(this.segComponent);
+  // // this.changeDetectorRef.detectChanges();
+  // }
+  
+  // }

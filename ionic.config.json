@@ -1,5 +1,7 @@
 {
   "name": "swipeable-segment-tab",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
